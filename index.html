@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="resources/favIcon/DonutFav.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Donas/Donuts</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" id="focus"><span class="Title_up">Sugar Dream Donuts</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comida china (proximamente)</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+      <img src="resources/logo.jpeg" alt="Logo" style="width: 100%; max-width: 100%; width: 150px; border-radius: 150px; margin: 5px;">
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /Navbar -->
+
+
+
+<!-- Content -->
+
+  <div style="position: relative; width: 100%; height: 700px; overflow: hidden;">
+    <img src="resources/Bg/bg_coffee.png" alt="Donut" style="width: 100%; max-width: 100%; height: 650px; z-index: 15;">
+    <img class="Logo" src="resources/More logos/Logos (2).jpeg" alt="Logo">
+    <p class="Title">¡Prueba una e invita otra!</p>
+  </div>
+
+ <div class="container">
+  <section>
+    <div class="onlytext">
+      <p style="width: 45%; margin: 155px; font-size: 20px;"> <i class="useFont">Creemos que una dona puede cambiar tu día. </i><br> Por eso cuidamos cada detalle: desde los ingredientes hasta la presentación. Utilizamos harinas seleccionadas, mantequilla real y coberturas hechas en casa. Ven por una, llévate media docena... o sorpréndete con nuestros combos.</p>
+      <img style="width: 50%; max-width: 100%; width: 340px; margin-right: 90px;" src="resources/Personeatdonut.png" alt="Icon_donut">
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section>
+    <div class="onlytext2">
+      <p style="width: 45%; margin: 155px; font-size: 20px;"> <i class="useFont">Las mejores historias familiares empiezan con pequeños detalles... </i><br> Como una caja de donas recién hechas. Compartirlas es más que un antojo: es una forma de estar juntos, sonreír y crear recuerdos que se quedan para siempre.</p>
+      <img style="width: 50%; max-width: 100%; width: 340px; margin-left: 90px;" src="resources/grandparents.png" alt="Icon_donut">
+    </div>
+  </section>
+</div>
+
+      <section class="bg_section">
+    <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" preserveAspectRatio="none"> -->
+      <!-- <path fill="#ffffff" d="M0,0 C410,120 960,0 540,120 L1990,150 L0,90 Z" /> -->
+    <!-- </svg> -->
+  </section>
+  
+
+<!-- /Content -->
+
+<!-- Types of Donuts -->
+<section style="margin: 35px 0px 35px 0px; ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 ">
+        <!-- Inicio -->
+          <div class="card producto" data-nombre="Dona de Mocca" data-precio="8">
+            <img src="resources/Donuts/Dona  (1).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Moca</h5>
+              <p class="card-text">Deliciosa dona de moca</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+<!-- Final -->
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 ">
+        <div class="card producto" data-nombre="Dona de Chocolate" data-precio="8">
+            <img src="resources/Donuts/Dona  (2).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Chocolate</h5>
+              <p class="card-text">Deliciosa dona de chocolate</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4 ">
+        <div class="card producto" data-nombre="Dona de Fresa chips" data-precio="8">
+            <img src="resources/Donuts/Dona  (3).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Fresa chips</h5>
+              <p class="card-text">Deliciosa dona de fresa chips</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="card producto" data-nombre="Dona de Coco" data-precio="8">
+            <img src="resources/Donuts/Dona  (4).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Coco</h5>
+              <p class="card-text">Deliciosa dona de coco</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="card producto" data-nombre="Dona de Canela" data-precio="8">
+            <img src="resources/Donuts/Dona  (6).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Canela</h5>
+              <p class="card-text">Deliciosa dona de canela</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+        <div class="card producto" data-nombre="Dona de Choco color" data-precio="8">
+            <img src="resources/Donuts/Dona  (5).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Choco color</h5>
+              <p class="card-text">Deliciosa dona de choco color</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card producto" data-nombre="Dona de choco chips" data-precio="8">
+            <img src="resources/Donuts/Dona  (11).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de choco chips</h5>
+              <p class="card-text">Deliciosa dona de choco chips</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card producto" data-nombre="Dona Glaseada" data-precio="8">
+            <img src="resources/Donuts/Dona  (7).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona Glaseada</h5>
+              <p class="card-text">Deliciosa dona glaseada</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card producto" data-nombre="Dona de Nuez" data-precio="8">
+            <img src="resources/Donuts/Dona  (8).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Nuez</h5>
+              <p class="card-text">Deliciosa dona de nuez</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card producto" data-nombre="Dona de Maple" data-precio="8">
+            <img src="resources/Donuts/Dona  (9).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Maple</h5>
+              <p class="card-text">Deliciosa dona de maple</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card producto" data-nombre="Dona de Azucar" data-precio="8">
+            <img src="resources/Donuts/Dona  (10).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Dona de Azucar</h5>
+              <p class="card-text">Deliciosa dona de azucar</p>
+              <p class="precio">Precio: $8</p>
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-danger restar">-</button>
+                  <span class="cantidad">0</span>
+                  <button class="btn btn-success sumar">+</button>
+                </div>
+              </div>  
+          </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+  <button onclick="generarPedidoWhatsApp()" class="btn btn-primary"><img width="25" height="25" src="https://img.icons8.com/scribby/50/ticket.png" alt="ticket"/>
+    Pedir y comprar
+  </button>
+  <br><br>
+  <button onclick="limpiarPedido()" class="btn btn-danger ms-2">
+    🗑 Limpiar pedido
+  </button>
+</div>
+  </div>
+</section>
+
+  <section>
+    <div class="container">
+    <div id="resumenPedido" class="mt-4 p-3 bg-light border rounded d-none" style="margin-bottom: 10px;">
+      <h5>Resumen de tu pedido:</h5>
+      <ul id="listaResumen" class="mb-2"></ul>
+      <strong id="totalResumen"></strong>
+    </div>
+    </div>
+  </section>
+
+<!-- /Types of Donuts -->
+
+<!-- Example -->
+<!-- /Example -->
+
+<!-- Footer -->
+<footer class="mt-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Sobre nosotros</h5>
+        <p>Comprometiendonos a hacer las mejores donas que puedas probar hoy y mañana.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <!-- <h5>Quick Links</h5> -->
+        <ul class="list-unstyled">
+          <li><a href="" class="text-decoration-none text-white">Todas las imagenes son ilustrativas</a></li>
+          <li><a href="" class="text-decoration-none text-white">y meramente</a></li>
+          <li><a href="" class="text-decoration-none text-white">publicidad.</a></li>
+        </ul>
+      </div> 
+      <div class="col-md-4 mb-3">
+        <h5>Los pedidos se hacen conforme a la seleccion de donas de tu preferencia.</h5>
+        <ul class="list-inline social-icons">
+          <!-- <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li> -->
+          <img src="resources/Donuts/Donuty.png" alt="Mascota Donuty" width="150px">
+        </ul>
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy;Sugar Dream Donuts</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /Footer -->
+
+<!-- <a target="_blank" href="https://icons8.com/icon/pXOdFvgiAoMQ/donut">Rosquilla</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
+<script src="Bootstrap/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
