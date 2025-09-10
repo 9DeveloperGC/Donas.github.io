@@ -12,6 +12,7 @@
 <body>
 
 <!-- Navbar -->
+
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html" id="focus"><span class="Title_up">Sugar Dream Donuts</span></a>
@@ -25,11 +26,14 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+          <li class="nav-item active">
+            <a class="nav-link active" href="index.html">Donas</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="comida_china.html">Comida china</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comida china (proximamente)</a>
+            <a class="nav-link " aria-current="page" href="#">Contactanos</a>
           </li>
         </ul>
       </div>
@@ -39,6 +43,7 @@
     </div>
   </div>
 </nav>
+
 <!-- /Navbar -->
 
 
@@ -54,7 +59,7 @@
  <div class="container">
   <section>
     <div class="onlytext">
-      <p style="width: 45%; margin: 155px; font-size: 20px;"> <i class="useFont">Creemos que una dona puede cambiar tu día. </i><br> Por eso cuidamos cada detalle: desde los ingredientes hasta la presentación. Utilizamos harinas seleccionadas, mantequilla real y coberturas hechas en casa. Ven por una, llévate media docena... o sorpréndete con nuestros combos.</p>
+      <p style="width: 45%; margin: 155px; font-size: 20px; text-align: justify;"> <i class="useFont">Creemos que una dona puede cambiar tu día. </i><br> Por eso cuidamos cada detalle: desde los ingredientes hasta la presentación. Utilizamos harinas seleccionadas, mantequilla real y coberturas hechas en casa. Ven por una, llévate media docena... o sorpréndete con nuestros combos.</p>
       <img style="width: 50%; max-width: 100%; width: 340px; margin-right: 90px;" src="resources/Personeatdonut.png" alt="Icon_donut">
     </div>
   </section>
@@ -63,7 +68,7 @@
 <div class="container">
   <section>
     <div class="onlytext2">
-      <p style="width: 45%; margin: 155px; font-size: 20px;"> <i class="useFont">Las mejores historias familiares empiezan con pequeños detalles... </i><br> Como una caja de donas recién hechas. Compartirlas es más que un antojo: es una forma de estar juntos, sonreír y crear recuerdos que se quedan para siempre.</p>
+      <p style="width: 45%; margin: 155px; font-size: 20px; text-align: justify;"> <i class="useFont">Las mejores historias familiares empiezan con pequeños detalles... </i><br> Como una caja de donas recién hechas. Compartirlas es más que un antojo: es una forma de estar juntos, sonreír y crear recuerdos que se quedan para siempre.</p>
       <img style="width: 50%; max-width: 100%; width: 340px; margin-left: 90px;" src="resources/grandparents.png" alt="Icon_donut">
     </div>
   </section>
@@ -289,7 +294,7 @@
     <div class="row">
       <div class="col-md-4 mb-3">
         <h5>Sobre nosotros</h5>
-        <p>Comprometiendonos a hacer las mejores donas que puedas probar hoy y mañana.</p>
+        <p>Comprometiéndonos a hacer las mejores donas que puedas probar hoy y mañana.</p>
       </div>
       <div class="col-md-4 mb-3">
         <!-- <h5>Quick Links</h5> -->
@@ -300,7 +305,7 @@
         </ul>
       </div> 
       <div class="col-md-4 mb-3">
-        <h5>Los pedidos se hacen conforme a la seleccion de donas de tu preferencia.</h5>
+        <h5>Los pedidos se hacen conforme a la selección de donas de tu preferencia.</h5>
         <ul class="list-inline social-icons">
           <!-- <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
           <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
@@ -320,6 +325,40 @@
 <!-- /Footer -->
 
 <!-- <a target="_blank" href="https://icons8.com/icon/pXOdFvgiAoMQ/donut">Rosquilla</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="avisoModal" tabindex="-1" aria-labelledby="avisoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark" style="color: aliceblue;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="avisoModalLabel">Aviso</h5>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Bienvenido 🙌 <br>
+          En el menu desplegable encontrara la sección:<br>
+          - Donas <br>
+          - Comida china<br>
+          En caso de encontrar un error, reportarlo a: ...@... 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary bg-dark" data-bs-dismiss="modal">Entendido</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var avisoModal = new bootstrap.Modal(document.getElementById('avisoModal'));
+    avisoModal.show();
+  });
+</script>
+
 
 <script src="Bootstrap/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>

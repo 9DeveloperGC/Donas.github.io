@@ -119,7 +119,7 @@ footer {
   .Logo {
     width: 130px;
     top: 25%;
-    left: 18%; /* mantenemos a la izquierda pero ajustamos */
+    left: 18%;
   }
 
   .Title {
@@ -148,3 +148,4 @@ footer {
     margin: 10px auto !important;
   }
 }
+
