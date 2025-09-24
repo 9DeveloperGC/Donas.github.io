@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Text_Title' ;
+  font-family: 'Text_Title';
   src: url(Font/Font_use/Kathen\ Font\ by\ Situjuh\ \(7NTypes\).otf);
 }
 
 @font-face {
-  font-family: 'Text_text' ;
+  font-family: 'Text_text';
   src: url(Font/Font_use/Wasted-Vindey.ttf);
 }
 
 @font-face {
-  font-family: 'Text_p' ;
+  font-family: 'Text_p';
   src: url(Font/Font_use/Tornado\ Italic\ Serif\ Font\ -\ Demo.otf);
 }
 
 @font-face {
-  font-family: 'Span' ;
+  font-family: 'Span';
   src: url(Font/Font_use/Tornado\ Serif\ Font\ -\ Demo.otf);
 }
 
@@ -30,7 +30,7 @@ footer {
   padding: 3rem 0;
 }
 
-.Title_up{
+.Title_up {
   font-family: 'Span';
 }
 
@@ -47,7 +47,7 @@ footer {
   border-radius: 150px;
 }
 
-.Title{
+.Title {
   font-family: 'Text_Title';
   font-size: 55px;
   color: #fff;
@@ -60,20 +60,20 @@ footer {
   padding: 10px;
 }
 
-.card-body{
+.card-body {
   background-color: #7e4a3256;
 }
 
 /* Ids */
 
-#focus:hover{
+#focus:hover {
   background-color: #b49060be;
   transition: 1.3s;
   color: black;
   border-radius: 5px;
 }
 
-#text{
+#text {
   font-family: 'Text_text';
   font-size: 25px;
   color: #ffffff;
@@ -83,34 +83,16 @@ footer {
   text-align: justify;
 }
 
-.bg_section{
-  /*background-image: url(resources/Bg/bg_home_coffe_donuts.png);*/
+.bg_section {
   background: url("resources/Bg/bg_home_coffe_donuts.png") no-repeat center/100% fixed;
   height: 600px;
-  /* border: 2px solid gray; */
+
 }
 
-/*section{
-  border: 5px solid salmon;
-}*/
 
-.onlytext{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*border: 1px solid grey;*/
-  padding: 20px;
-}
 
-.onlytext2{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  /*border: 1px solid grey; */
-  padding: 20px;
-}
 
-.useFont{
+.useFont {
   font-family: 'Text_p';
   font-size: 30px;
 }
@@ -130,6 +112,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   .onlytext,
   .onlytext2 {
     flex-direction: column !important;
@@ -149,3 +132,128 @@ footer {
   }
 }
 
+
+
+/*CORRECIÓN*/
+
+/* Extra pequeño (teléfonos) */
+@media (max-width: 576px) {
+
+  .Resbg_coffee {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 380px !important;
+  }
+
+  .Logo {
+    width: 80px !important;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    border-radius: 150px;
+  }
+
+  .Title {
+    font-family: 'Text_Title';
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 20px rgb(125, 173, 167);
+    text-align: center;
+    padding: 0px;
+  }
+
+  .Res_div {
+    height: 400px !important;
+  }
+
+  .bg_section {
+    background: url("resources/Bg/bg_home_coffe_donuts.png") no-repeat center/100%;
+    height: 300px !important;
+    max-width: 100%;
+    width: 100%;
+  }
+
+
+}
+
+/* Pequeño (móviles grandes en vertical) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Teléfonos grandes y tablets en vertical */
+
+  .Logo {
+    width: 120px !important;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    border-radius: 150px;
+  }
+
+  .Resbg_coffee {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 400px !important;
+  }
+
+  .Title {
+    font-family: 'Text_Title';
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    top: 72%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 20px rgb(125, 173, 167);
+    text-align: center;
+    padding: 0px;
+  }
+
+  .Res_div {
+    height: 450px !important;
+  }
+
+  .Res_p{
+    width: 500px !important;
+  }
+
+}
+
+/* Mediano (tablets en horizontal, pantallas pequeñas) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+  /* Tablets horizontales */
+  .Logo {
+    width: 120px;
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 150px;
+  }
+
+  .bg_section {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 400px !important;
+  }
+
+}
+
+/* Grande (laptops, monitores pequeños) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Laptops */
+
+
+
+}
+
+/* Extra grande (pantallas grandes, monitores 1080p o más) */
+@media (min-width: 1201px) {
+  /* PCs grandes */
+
+}
