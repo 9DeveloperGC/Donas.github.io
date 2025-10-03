@@ -287,6 +287,76 @@
         </div>
 
       </div>
+
+      <div class="row">
+        <!-- Platillo 9 -->
+        <div id="coltwo" class="col col-6 col-md-6 col-lg-3">
+          <div class="card producto cardplatilloresponsive" style="width: 15rem;" data-nombre="Orden brocheta teriyaki" data-precio="50">
+            <img class="card-img-top" src="resources_chinese/Foods/Brochetateriyaki.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Brochetas teriyaki</h5>
+              <p class="card-text">Orden de 2 brochetas de pollo</p>
+              <p class="precio">Precio: $50</p>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-danger restar">-</button>
+                <span class="cantidad">0</span>
+                <button class="btn btn-success sumar">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Platillo 10 -->
+        <div id="coltwo" class="col col-6 col-md-6 col-lg-3" style="display: none;">
+          <div class="card producto cardplatilloresponsive" style="width: 15rem;" data-nombre="Caldo chino" data-precio="65">
+            <img class="card-img-top" src="resources_chinese/Foods/Caldochino.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Caldo chino</h5>
+              <p class="card-text">Caldo muy delicioso con col y pechuga de pollo.</p>
+              <p class="precio">Precio: $65</p>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-danger restar">-</button>
+                <span class="cantidad">0</span>
+                <button class="btn btn-success sumar">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Platillo 11 -->
+        <div id="coltwo" class="col col-6 col-md-6 col-lg-3" style="display: none;">
+          <div class="card producto cardplatilloresponsive" style="width: 15rem;" data-nombre="Orden de rollitos primavera" data-precio="65">
+            <img class="card-img-top" src="resources_chinese/Foods/Rollitosprimavera.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Orden de rollitos primavera</h5>
+              <p class="card-text">Estos no pueden faltar, ¡te ofrecemos 3 rollitos!, clasico entre clasicos, rollito
+                con salteado de verduras</p>
+              <p class="precio">Precio: $65</p>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-danger restar">-</button>
+                <span class="cantidad">0</span>
+                <button class="btn btn-success sumar">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Platillo 12-->
+        <div id="coltwo" class="col col-6 col-md-6 col-lg-3" style="display: none;">
+          <div class="card producto cardplatilloresponsive" style="width: 15rem;" data-nombre="Espaguetti" data-precio="55">
+            <img class="card-img-top" src="resources_chinese/Foods/espagueti.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Espaguetti</h5>
+              <p class="card-text">Espaguetti con salteado de verduras</p>
+              <p class="precio">Precio: $55</p>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-danger restar">-</button>
+                <span class="cantidad">0</span>
+                <button class="btn btn-success sumar">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <!-- /Tipos de Comida china -->
 
       <!-- Combos de Comida china -->
@@ -483,7 +553,7 @@
           <!-- Snack 3 -->
           <div id="colthree" class="col">
             <div class="card producto cardresponsive2" style="width: 15rem;" data-nombre="Pan chino" data-precio="12">
-              <img class="card-img-top" src="resources_chinese/Foods/Panchino.png" alt="Card image cap">
+              <img class="card-img-top" src="resources_chinese/Sinexistencias.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Pan chino</h5>
                 <p class="card-text">Pan con un relleno dulce como tú.</p>
@@ -584,8 +654,8 @@
                   domicilio!</span>
               </li>
               <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">Proximamente nuevos
-                  platillos...</span>
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2"><a href="Nuevosplatillos.html">Proximamente nuevos
+                  platillos...</a></span>
                 </li>
                 <li class="mb-3">
                   <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Todas las imagenes son
@@ -607,7 +677,7 @@
                 </tr>
                 <tr>
                   <td>Viernes - Domingo</td>
-                  <td>12pm - 5pm</td>
+                  <td>12pm - 8pm</td>
                 </tr>
               </tbody>
             </table>
@@ -627,7 +697,44 @@
     </footer>
 
 
+
+
     <!-- /Footer -->
+
+<!-- Modal -->
+  <div class="modal fade" id="avisoModal" tabindex="-1" aria-labelledby="avisoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark" style="color: aliceblue;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="avisoModalLabel">Aviso</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            ¡¡¡NOVEDAD!!!<br>
+
+            Nuevo platillo... <br><br>
+
+            Brochetas teriyaki.
+
+            
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary bg-dark" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var avisoModal = new bootstrap.Modal(document.getElementById('avisoModal'));
+      avisoModal.show();
+    });
+  </script>
+
+
     <script src="Combocontroller.js"></script>
     <script src="scriptchinese.js"></script>
     <script src="Bootstrap/bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
