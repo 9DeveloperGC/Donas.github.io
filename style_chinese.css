@@ -7,6 +7,18 @@ body{
     background-image: url(resources_chinese/Food2light.png);
 }
 
+.img-platillo {
+  width: 100% !important;
+  height: 150px !important; 
+  object-fit: cover !important;
+}
+
+.point{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: text;
+}
+
 @font-face {
   font-family: 'Main' ;
   src: url(Font/Font_use/CHINESETAKEAWAY.ttf);
