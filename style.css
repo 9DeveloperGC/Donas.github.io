@@ -1,259 +1,75 @@
-@font-face {
-  font-family: 'Text_Title';
-  src: url(Font/Font_use/Kathen\ Font\ by\ Situjuh\ \(7NTypes\).otf);
-}
-
-@font-face {
-  font-family: 'Text_text';
-  src: url(Font/Font_use/Wasted-Vindey.ttf);
-}
-
-@font-face {
-  font-family: 'Text_p';
-  src: url(Font/Font_use/Tornado\ Italic\ Serif\ Font\ -\ Demo.otf);
-}
-
-@font-face {
-  font-family: 'Span';
-  src: url(Font/Font_use/Tornado\ Serif\ Font\ -\ Demo.otf);
-}
-
-body {
-  background-color: #E8DCCA;
-  /*background-color: #CAE8DC;*/
-  /*background-color: #DCCAE8;*/
-}
-
-footer {
-  background-color: #343a40;
-  color: #fff;
-  padding: 3rem 0;
-}
-
-.Title_up {
-  font-family: 'Span';
-}
-
-.social-icons a {
-  font-size: 1.25rem;
-}
-
-.Logo {
-  width: 250px;
-  position: absolute;
-  top: 28%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  border-radius: 150px;
-}
-
-.Title {
-  font-family: 'Text_Title';
-  font-size: 55px;
-  color: #fff;
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 1px 1px 20px rgb(125, 173, 167);
-  text-align: center;
-  padding: 10px;
-}
-
-.card-body {
-  background-color: #7e4a3256;
-}
-
-/* Ids */
-
-#focus:hover {
-  background-color: #b49060be;
-  transition: 1.3s;
-  color: black;
-  border-radius: 5px;
-}
-
-#text {
-  font-family: 'Text_text';
-  font-size: 25px;
-  color: #ffffff;
-  background-color: #0000005e;
-  margin: 22px;
-  padding: 15px;
-  text-align: justify;
-}
-
-.bg_section {
-  background: url("resources/Bg/bg_home_coffe_donuts.png") no-repeat center/100% fixed;
-  height: 600px;
-
-}
-
-
-
-
-.useFont {
-  font-family: 'Text_p';
-  font-size: 30px;
-}
-
-@media (max-width: 768px) {
-  .Logo {
-    width: 130px;
-    top: 25%;
-    left: 18%;
-  }
-
-  .Title {
-    font-size: 28px;
-    top: 80%;
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .onlytext,
-  .onlytext2 {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .onlytext p,
-  .onlytext2 p {
-    width: 90% !important;
-    margin: 20px auto !important;
-  }
-
-  .onlytext img,
-  .onlytext2 img {
-    width: 80% !important;
-    margin: 10px auto !important;
-  }
-}
-
-
-
-/*CORRECIÓN*/
-
-/* Extra pequeño (teléfonos) */
-@media (max-width: 576px) {
-
-  .Resbg_coffee {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 380px !important;
-  }
-
-  .Logo {
-    width: 80px !important;
-    position: absolute;
-    top: 28%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    border-radius: 150px;
-  }
-
-  .Title {
-    font-family: 'Text_Title';
-    font-size: 28px;
-    color: #fff;
-    position: absolute;
-    top: 80%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 20px rgb(125, 173, 167);
-    text-align: center;
-    padding: 0px;
-  }
-
-  .Res_div {
-    height: 400px !important;
-  }
-
-  .bg_section {
-    background: url("resources/Bg/bg_home_coffe_donuts.png") no-repeat center/100%;
-    height: 300px !important;
-    max-width: 100%;
+.main {
+    /*background: linear-gradient(-45deg, #BBD0FC, #276CF5, #0949C8, #052970);*/
+    background-size: 200% 200%;
+    height: 700px;
     width: 100%;
-  }
-
-
+    animation: animacion 80s ease-in-out infinite;
+    background-image: url(resources_index/Montaña.jpg);
 }
 
-/* Pequeño (móviles grandes en vertical) */
-@media (min-width: 577px) and (max-width: 768px) {
-  /* Teléfonos grandes y tablets en vertical */
-
-  .Logo {
-    width: 120px !important;
+.text {
+    border: solid 2px white;
+    border-radius: 20px;
+    letter-spacing: 10px;
+    padding: 5px;
+    padding-left: 15px;
     position: absolute;
-    top: 30%;
-    left: 12%;
-    transform: translate(-50%, -50%);
-    border-radius: 150px;
-  }
-
-  .Resbg_coffee {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 400px !important;
-  }
-
-  .Title {
-    font-family: 'Text_Title';
-    font-size: 28px;
-    color: #fff;
-    position: absolute;
-    top: 72%;
+    top: 50%;
     left: 49%;
     transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 20px rgb(125, 173, 167);
+    color: white;
+    font-size: 30px;
+    font-family: serif;
+}
+
+.imgicon{
+    position: relative;
+    width: 200px;
+    top: 15%;
+    left: 21%;
+    transform: translate(0%, 0%);
+}
+
+.textt{
+    text-align: justify;
+    margin: 18px;
+}
+
+h1{
     text-align: center;
-    padding: 0px;
-  }
-
-  .Res_div {
-    height: 450px !important;
-  }
-
-  .Res_p{
-    width: 500px !important;
-  }
-
 }
 
-/* Mediano (tablets en horizontal, pantallas pequeñas) */
-@media (min-width: 769px) and (max-width: 992px) {
 
-  /* Tablets horizontales */
-  .Logo {
-    width: 120px;
-    position: absolute;
-    top: 22%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    border-radius: 150px;
-  }
-
-  .bg_section {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 400px !important;
-  }
-
+#carouselExampleCaptions {
+  max-height: 580px;
+  max-width: 50%;
+  overflow: hidden;
 }
 
-/* Grande (laptops, monitores pequeños) */
-@media (min-width: 993px) and (max-width: 1200px) {
-  /* Laptops */
-
-
-
+#carouselExampleCaptions .carousel-item img {
+  width: 50%;
+  height: 580px;
+  object-fit: fill;
 }
 
-/* Extra grande (pantallas grandes, monitores 1080p o más) */
-@media (min-width: 1201px) {
-  /* PCs grandes */
+.carousel{
+    border-radius: 10%;
+    top: 0%;
+    left: 24%;
+    transform: translate(0%, 0%);
+}
+
+@keyframes animacion {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 
 }

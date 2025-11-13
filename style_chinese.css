@@ -87,6 +87,19 @@ body{
     position: absolute;
 }
 
+.card.producto {
+  height: 100%;            /* Hace que la altura de la carta llene la columna */
+  display: flex;
+  flex-direction: column;  /* Para que el contenido se acomode verticalmente */
+}
+
+.card.producto .card-body {
+  flex-grow: 1;            /* El texto se expande para emparejar las alturas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
 section{
     position: absolute;
     /*border: 2px solid #e7da24;*/
